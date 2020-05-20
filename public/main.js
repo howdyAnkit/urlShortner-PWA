@@ -1,5 +1,5 @@
 // information to reach API
-const apiKey = '<Your API Key>';
+const apiKey = '57792bae64654393ad50e0f26dfac797';
 const url = 'https://api.rebrandly.com/v1/links';
 
 // Some page elements
@@ -10,33 +10,35 @@ const responseField = document.querySelector('#responseField');
 // AJAX functions
 // Code goes here
 const shortenUrl = async () => {
-	const urlToShorten = inputField.value;
-  const data = JSON.stringify({destination: urlToShorten});
-  try {
-    const response = await fetch(url, {
-			method: 'POST',
-      body: data,
-      headers: {
-        'Content-type': 'application/json',
-				'apikey': apiKey
-      }
+    const urlToShorten = inputField.value;
+    const data = JSON.stringify({
+        destination: urlToShorten
     });
-		if(response.ok){
-      const jsonResponse = await response.json();
-      renderResponse(jsonResponse);
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            body: data,
+            headers: {
+                'Content-type': 'application/json',
+                'apikey': apiKey
+            }
+        });
+        if (response.ok) {
+            const jsonResponse = await response.json();
+            renderResponse(jsonResponse);
+        }
+    } catch (error) {
+        console.log(error);
     }
-  } catch (error) {
-    console.log(error);
-  }
 }
 
 // Clear page and call AJAX functions
 const displayShortUrl = (event) => {
-  event.preventDefault();
-  while(responseField.firstChild){
-    responseField.removeChild(responseField.firstChild);
-  }
-  shortenUrl();
+    event.preventDefault();
+    while (responseField.firstChild) {
+        responseField.removeChild(responseField.firstChild);
+    }
+    shortenUrl();
 }
 
 shortenButton.addEventListener('click', displayShortUrl);
