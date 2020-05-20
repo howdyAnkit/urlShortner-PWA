@@ -1,0 +1,29 @@
+{
+  "name": "urlshrotner",
+  "version": "1.0.0",
+  "description": "Use Babel to transpile JavaScript ES6 to ES5",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitpal35/urlShortner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitpal35/urlShortner/issues"
+  },
+  "homepage": "https://github.com/ankitpal35/urlShortner#readme"
+}
