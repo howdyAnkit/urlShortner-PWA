@@ -8,9 +8,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "http-server": "^0.12.3"
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "http-server": "0.12.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
