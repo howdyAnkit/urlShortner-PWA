@@ -1,0 +1,10 @@
+{
+    "name": "urlShortner",
+    "short_name": "urlShortner",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary"
+    
+}
