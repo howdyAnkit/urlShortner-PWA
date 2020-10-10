@@ -1,0 +1,77 @@
+{
+    "short_name" : "urlShortner",
+    "name" : "Url-chotaKaro",
+    "icons": [
+        {
+            "src": "image/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16",
+            "purpose": "any"
+        },
+        {
+            "src": "image/favicon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32",
+            "purpose": "any"
+        },
+        {
+            "src": "image/mstile-150x150.png",
+            "type": "image/png",
+            "sizes": "270x270",
+            "purpose": "any"
+        },
+        {
+            "src": "image/android-chrome-256x256.png",
+            "type": "image/png",
+            "sizes": "256x256",
+            "purpose": "any"
+        },
+        {
+            "src": "image/saved.png",
+            "type": "image/png",
+            "sizes": "260x260",
+            "purpose": "any"
+        },
+        {
+            "src": "image/favicon.ico",
+            "type": "image/ico",
+            "sizes": "48x48",
+            "purpose": "any"
+        },
+        {
+            "src": "image/shortner.png",
+            "type": "image/png",
+            "sizes": "70x70",
+            "purpose": "any"
+        },
+        {
+            "src": "image/safari-pinned-tab.svg",
+            "type": "image/svg",
+            "sizes": "347x347",
+            "purpose": "any"
+        },
+        {
+            "src": "image/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "180x180",
+            "purpose": "any"
+        },
+        {
+            "src": "image/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "image/144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
+        }
+        
+    ],
+    "start_url": "index.html",
+    "display" : "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
