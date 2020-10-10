@@ -67,8 +67,13 @@
             "type": "image/png",
             "sizes": "144x144",
             "purpose": "any"
+        },
+        {
+            "src": "image/SplashScreen.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
         }
-        
     ],
     "start_url": "index.html",
     "display" : "standalone",
