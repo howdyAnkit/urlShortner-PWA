@@ -1,4 +1,5 @@
 // information to reach API
+//jshint esversion:6
 const apiKey = '57792bae64654393ad50e0f26dfac797';
 const url = 'https://api.rebrandly.com/v1/links';
 

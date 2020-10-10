@@ -1,4 +1,5 @@
  // Manipulates responseField to render a formatted and appropriate message
+ //jshint esversion:6
 const renderResponse = (res) => {
   // Displays either message depending on results
   if(res.errors){
