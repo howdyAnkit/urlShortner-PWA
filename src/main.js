@@ -2,16 +2,23 @@
 //jshint esversion:6
 const apiKey = '57792bae64654393ad50e0f26dfac797';
 const url = 'https://api.rebrandly.com/v1/links';
-
 // Some page elements
 const inputField = document.querySelector('#input');
 const shortenButton = document.querySelector('#shorten');
 const responseField = document.querySelector('#responseField');
 
+
 // AJAX functions
 // Code goes here
 const shortenUrl = async () => {
-    const urlToShorten = inputField.value;
+    let urlToShorten = inputField.value;
+    var prefix = 'https://';
+    var httpPrefix = 'http://';
+
+    if(urlToShorten.substr(0, prefix.length) !== prefix){
+        urlToShorten = prefix + urlToShorten;
+    }
+
     const data = JSON.stringify({
         destination: urlToShorten
     });
@@ -27,11 +34,12 @@ const shortenUrl = async () => {
         if (response.ok) {
             const jsonResponse = await response.json();
             renderResponse(jsonResponse);
+
         }
     } catch (error) {
         console.log(error);
     }
-}
+};
 
 // Clear page and call AJAX functions
 const displayShortUrl = (event) => {
@@ -39,6 +47,8 @@ const displayShortUrl = (event) => {
     while (responseField.firstChild) {
         responseField.removeChild(responseField.firstChild);
     }
+            // const qrCode = jsonResponse.shortUrl.concat('.qr');
+            // renderResponse(qrCode);
     shortenUrl();
 }
 
@@ -53,4 +63,3 @@ if("serviceWorker" in navigator){
         console.log(error);
     });
 }
-
